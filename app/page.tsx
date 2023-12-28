@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { Hero } from '@/components'
+import { Hero, CustomFilter, SearchBar } from '@/components'
 
 export default function Home() {
   return (
@@ -12,11 +12,15 @@ export default function Home() {
           <h1 className='text-4xl font-extrabold'>
             Car Options
           </h1>
-          <p>
-            <div className='home__filter'>
-              /**time stamp 50:00 */
-            </div>
-          </p>
+          <p>Explore the cars</p>
+          <div className='home__filter'>
+              <SearchBar />
+
+              <div className='home__filter-container'>
+                <CustomFilter title="fuel" />
+                <CustomFilter title="fuel" />
+              </div>
+          </div>
         </div>
       </div>
     </main>
