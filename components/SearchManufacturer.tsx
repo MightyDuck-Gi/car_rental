@@ -68,6 +68,6 @@ function SearchManufacturer({setManufacturer, manufacturer} : SearchManufacturer
   )
 }
 
-/*time @12.25*/
+/*time @12.20*/
 
 export default SearchManufacturer
